@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Sports.css'
 
 const Sports = () => {
+    const [activities, setActivity] = useState([]);
+
+    useEffect(() => {
+        fetch('sports-recreation.json')
+            .then(res => res.json())
+            .then(data => setActivity(data))
+    }, [])
+
     return (
         <div className='sports-container'>
             <div className='activities-container'>
-                <h2>sports</h2>
+                <h2>sports: {activities.length}</h2>
             </div>
+
+
             <div className='profile-container'>
                 <h2>profile activity</h2>
             </div>

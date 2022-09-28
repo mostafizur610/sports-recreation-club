@@ -1,0 +1,16 @@
+.name {
+    display: flex;
+}
+
+.name img {
+    padding-top: 15px;
+    padding-right: 10px;
+    height: 70px;
+    width: 100px;
+}
+
+.name h1 {
+    padding: 5px;
+    color: blueviolet;
+    font-style: italic;
+}

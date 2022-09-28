@@ -1,0 +1,53 @@
+{
+    "count": 6,
+    "rows": [
+        {
+            "id": 1,
+            "activity_name": "Cricket",
+            "description": "Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end, each comprising two bails balanced on three stumps.",
+            "age": "15-36",
+            "image": "cricket.jpg",
+            "time": "4hr"
+        },
+        {
+            "id": 2,
+            "activity_name": "Football",
+            "description": "Football, also called association football or soccer, is a game involving two teams of 11 players who try to maneuver the ball into the other team's goal without using their hands or arms.",
+            "age": "18-38",
+            "image": "football.png",
+            "time": "2hr"
+        },
+        {
+            "id": 3,
+            "activity_name": "Cycling",
+            "description": "Cycling can help to protect you from serious diseases such as stroke, heart attack, some cancers, depression, diabetes, obesity and arthritis.",
+            "age": "20-40",
+            "image": "cycling.jpg",
+            "time": "1.5hr"
+        },
+        {
+            "id": 4,
+            "activity_name": "Swimming",
+            "description": "Swimming is a great workout because you need to move your whole body against the resistance of the water.",
+            "age": "15-35",
+            "image": "swimming.png",
+            "time": "1hr"
+        },
+        {
+            "id": 5,
+            "activity_name": "Marathon",
+            "description": "The marathon is a long-distance foot race with a distance of 42.195 kilometres (26 miles 385 yards), usually run as a road race, but the distance can be covered on trail routes.",
+            "age": "40-70",
+            "image": "marathon.jpg",
+            "time": "10hr"
+        },
+        {
+            "id": 6,
+            "activity_name": "Kids-Entertain",
+            "description": "Playing by themselves also might mean that your child is practicing independent inquiry, such as a toddler rolling a ball down a ramp over and over again. “They’re testing out hypotheses and building theories about how the world works,” Dr. Falkner explains.",
+            "age": "5-12",
+            "image": "velocity.jpg",
+            "time": "3hr"
+        }
+    ]
+}

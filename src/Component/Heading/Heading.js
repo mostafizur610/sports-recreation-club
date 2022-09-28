@@ -5,9 +5,9 @@ import './Heading.css'
 
 const Heading = () => {
     return (
-        <div className='name'>
+        <div className='heading'>
             <img src={logo} alt="" />
-            <h1 className='name'>Sports & Recreation Club</h1>
+            <h1>Sports & Recreation Club</h1>
         </div>
     );
 };

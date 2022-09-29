@@ -11,7 +11,7 @@ const Sports = () => {
         fetch('sports-recreation.json')
             .then(res => res.json())
             .then(data => setActivity(data))
-    }, [])
+    }, []);
 
     const handleAddToProfile = (activity) => {
         const newProfile = [...profile, activity];
@@ -34,10 +34,7 @@ const Sports = () => {
                         handleAddToProfile={handleAddToProfile}
                     ></Activity>)
                 }
-
             </div>
-
-
             <div className='profile-container'>
                 <Profile profile={profile}></Profile>
             </div>

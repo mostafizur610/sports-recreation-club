@@ -2,12 +2,9 @@ import React from 'react';
 import './Activity.css'
 
 const Activity = (props) => {
+    // destructure and value pass
     const { activity, handleAddToProfile } = props;
-    // console.log('activity', activity);
-    // const { handleAddToProfile } = props;
-    // console.log(props.activity);
     const { image, activity_name, description, age, time } = activity;
-    // console.log(props);
 
     return (
         <div className='activity'>
@@ -19,6 +16,7 @@ const Activity = (props) => {
                 <h4>Time Required: {time} hr</h4>
             </div>
 
+            {/* Add Button */}
             <button disabled={activity?.add} onClick={() => handleAddToProfile(activity)} className={activity.add ? 'btn-list disable' : 'btn-list enable'}>
                 <p>{activity.add ? 'Added' : 'Add to List'}</p>
             </button>

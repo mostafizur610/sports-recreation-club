@@ -6,30 +6,31 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Profile = (props) => {
     const [breakTime, setBreakTime] = useState('0 min');
+
     const [button1, setButton1] = useState(true);
     const [button2, setButton2] = useState(true);
     const [button3, setButton3] = useState(true);
     const [button4, setButton4] = useState(true);
     const [button5, setButton5] = useState(true);
+
     useEffect(() => {
         const time = localStorage.getItem('breakTime');
         if (time) setBreakTime(JSON.parse(time));
         checkBreakButton((JSON.parse(time)))
-    }, [])
+    }, []);
+
     const { profile } = props;
-    // console.log(profile);
     let total = 0;
     for (const activity of profile) {
         total = total + parseFloat(activity.time);
-        // console.log(total);
     }
-
+    // toast
     const showToast = () => {
-        toast.dark('Wow!! Activity Completed', {
+        toast.dark('Wow!!😱 Activity Completed', {
             position: "top-center"
         });
     }
-
+    // local storage section
     const breakButton = (evt) => {
         localStorage.removeItem('breakTime');
         const time = evt.target.textContent;
@@ -37,7 +38,7 @@ const Profile = (props) => {
         setBreakTime(time);
         checkBreakButton(evt.target.textContent);
     }
-
+    // break time button section
     const checkBreakButton = (text) => {
         if (text === '15 min') {
             setButton1(false);

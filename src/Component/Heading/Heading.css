@@ -1,9 +1,9 @@
+/* Header section */
 .heading {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: cyan;
-
 }
 
 .heading img {
@@ -25,6 +25,7 @@
     animation-duration: 10s;
 }
 
+/* Animation */
 @keyframes example {
     from {
         background-color: mistyrose;
@@ -41,6 +42,7 @@
     padding: 5px;
 }
 
+/* phone responsive */
 @media only screen and (max-width: 600px) {
     .heading {
         width: 100%;

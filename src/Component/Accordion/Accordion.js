@@ -1,6 +1,7 @@
 import React from 'react';
 import './Accordion.css'
 
+// Question part
 const Accordion = () => {
     return (
         <div className='frequent-question'>

@@ -2,7 +2,14 @@ import React from 'react';
 import profileImg from '../../images/m.jpg'
 import './Profile.css'
 
-const Profile = () => {
+const Profile = (props) => {
+    const { profile } = props;
+    // console.log(profile);
+    let total = 0;
+    for (const activity of profile) {
+        total = total + parseFloat(activity.time);
+        // console.log(total);
+    }
     return (
         <div className='right-container'>
             <div className='profile'>
@@ -35,8 +42,8 @@ const Profile = () => {
                 <button className='btn-break'>50min</button>
             </div>
             <h4>Exercise Details</h4>
-            <div className='total-exercise'><h5>Exercise time: </h5></div>
-            <div className='break-section'><h5>Break time: </h5></div>
+            <div className='total-exercise'><h5>Exercise time : {total} hr</h5></div>
+            <div className='break-section'><h5>Break time : </h5></div>
             <button className='btn-activity'>Activity Completed</button>
         </div>
     );

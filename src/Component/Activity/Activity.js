@@ -14,8 +14,8 @@ const Activity = (props) => {
             <p className='activity-name'>{activity_name}</p>
             <div className='activity-info'>
                 <p>{description}</p>
-                <h4>For Age: {age}</h4>
-                <h4>Time Required: {time}</h4>
+                <h4>For Age: {age} year</h4>
+                <h4>Time Required: {time} hr</h4>
             </div>
 
             <button onClick={() => handleAddToProfile(activity)} className='btn-list'>

@@ -19,7 +19,20 @@
 
 @media only screen and (max-width: 700px) {
     .sports-container {
+        display: inline-block;
+    }
+
+    .profile-container {
+        background-color: rgb(234, 245, 240);
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 50px;
+
+    }
+
+    .activities-container {
         display: flex;
-        flex: wrap;
+        flex-wrap: wrap;
     }
 }

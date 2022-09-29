@@ -1,6 +1,8 @@
 import React from 'react';
 import profileImg from '../../images/m.jpg'
 import './Profile.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Profile = (props) => {
     const { profile } = props;
@@ -10,6 +12,13 @@ const Profile = (props) => {
         total = total + parseFloat(activity.time);
         // console.log(total);
     }
+
+    const showToast = () => {
+        toast.dark('Activity Completed!!', {
+            position: "top-center"
+        });
+    }
+
     return (
         <div className='right-container'>
             <div className='profile'>
@@ -44,7 +53,9 @@ const Profile = (props) => {
             <h4>Exercise Details</h4>
             <div className='total-exercise'><h5>Exercise time : {total} hr</h5></div>
             <div className='break-section'><h5>Break time : </h5></div>
-            <button className='btn-activity'>Activity Completed</button>
+            <button className='btn-activity'
+                onClick={showToast}>Activity Completed</button>
+            <ToastContainer />
         </div>
     );
 };

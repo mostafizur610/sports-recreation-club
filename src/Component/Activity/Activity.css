@@ -34,9 +34,9 @@
     border: none;
     position: absolute;
     bottom: 0;
+    cursor: pointer;
 }
 
 .btn-list:hover {
     background-color: green;
-    cursor: pointer;
 }

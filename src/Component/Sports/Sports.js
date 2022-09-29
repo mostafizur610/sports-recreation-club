@@ -46,6 +46,18 @@ const Sports = () => {
                         <div>Age</div>
                     </div>
                 </div>
+                <h4>Add A Break</h4>
+                <div className='button-section'>
+                    <button className='btn-break'>15min</button>
+                    <button className='btn-break'>20min</button>
+                    <button className='btn-break'>30min</button>
+                    <button className='btn-break'>40min</button>
+                    <button className='btn-break'>50min</button>
+                </div>
+                <h4>Exercise Details</h4>
+                <div className='total-exercise'><h5>Exercise time: </h5></div>
+                <div className='break-section'><h5>Break time: </h5></div>
+                <button className='btn-activity'>Activity Completed</button>
             </div>
         </div>
     );

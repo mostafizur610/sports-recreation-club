@@ -1,11 +1,16 @@
 .activity {
     width: 300px;
     height: 510px;
+    border: 1px solid aquamarine;
+    border-radius: 8px;
+    position: relative;
 }
 
-.activity image {
+.activity img {
     width: 286px;
-    height: 286px;
+    height: 150px;
+    border-radius: 8px;
+    margin: 7px;
 }
 
 .activity-name {
@@ -14,4 +19,24 @@
     font-weight: 700;
     text-align: center;
     color: blue;
+}
+
+.activity-info {
+    margin: 10px;
+    text-align: start;
+}
+
+.btn-list {
+    width: 100%;
+    background-color: rgb(130, 36, 218);
+    color: white;
+    border-radius: 0px 0px 8px 8px;
+    border: none;
+    position: absolute;
+    bottom: 0;
+}
+
+.btn-list:hover {
+    background-color: green;
+    cursor: pointer;
 }

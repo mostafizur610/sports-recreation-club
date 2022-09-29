@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Activity from '../Activity/Activity';
 import './Sports.css'
+import profile from '../../images/m.jpg'
 
 const Sports = () => {
     const [activities, setActivity] = useState([]);
@@ -23,7 +24,28 @@ const Sports = () => {
 
 
             <div className='profile-container'>
-                <h2>profile activity</h2>
+
+                <div className='profile'>
+                    <img src={profile} alt="" />
+                    <div>
+                        <h4>Mostafizur Rahman</h4>
+                        <p><small>Mirpur, Dhaka</small></p>
+                    </div>
+                </div>
+                <div className='profile-details'>
+                    <div>
+                        <div>64kg</div>
+                        <div>Weight</div>
+                    </div>
+                    <div>
+                        <div>5.5inc</div>
+                        <div>Height</div>
+                    </div>
+                    <div>
+                        <div>26</div>
+                        <div>Age</div>
+                    </div>
+                </div>
             </div>
         </div>
     );

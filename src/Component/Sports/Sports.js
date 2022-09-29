@@ -14,9 +14,15 @@ const Sports = () => {
     }, [])
 
     const handleAddToProfile = (activity) => {
-        // console.log(activity);
         const newProfile = [...profile, activity];
         setProfile(newProfile);
+        const fromState = JSON.parse(JSON.stringify(activities));
+        fromState.forEach(ac => {
+            if (ac.id === activity.id) {
+                ac.add = true;
+            }
+        });
+        setActivity(fromState);
     }
 
     return (

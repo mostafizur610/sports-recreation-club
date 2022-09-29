@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import profileImg from '../../images/m.jpg'
 import './Profile.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Profile = (props) => {
+    const [breakTime, setBreakTime] = useState('');
+    useEffect(() => {
+        const time = localStorage.getItem('breakTime');
+        if (time) setBreakTime(JSON.parse(time));
+    }, [breakTime])
     const { profile } = props;
     // console.log(profile);
     let total = 0;
@@ -17,6 +22,13 @@ const Profile = (props) => {
         toast.dark('Activity Completed!!', {
             position: "top-center"
         });
+    }
+
+    const breakButton = (evt) => {
+        localStorage.removeItem('breakTime');
+        const time = evt.target.textContent;
+        localStorage.setItem('breakTime', JSON.stringify(time));
+        setBreakTime(time);
     }
 
     return (
@@ -44,15 +56,15 @@ const Profile = (props) => {
             </div>
             <h4>Add A Break</h4>
             <div className='button-section'>
-                <button className='btn-break'>15min</button>
-                <button className='btn-break'>20min</button>
-                <button className='btn-break'>30min</button>
-                <button className='btn-break'>40min</button>
-                <button className='btn-break'>50min</button>
+                <button className='btn-break' onClick={breakButton}>15min</button>
+                <button className='btn-break' onClick={breakButton}>20min</button>
+                <button className='btn-break' onClick={breakButton}>30min</button>
+                <button className='btn-break' onClick={breakButton}>40min</button>
+                <button className='btn-break' onClick={breakButton}>50min</button>
             </div>
             <h4>Exercise Details</h4>
             <div className='total-exercise'><h5>Exercise time : {total} hr</h5></div>
-            <div className='break-section'><h5>Break time : </h5></div>
+            <div className='break-section'><h5>Break time : {breakTime}</h5></div>
             <button className='btn-activity'
                 onClick={showToast}>Activity Completed</button>
             <ToastContainer />

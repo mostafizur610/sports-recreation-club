@@ -37,6 +37,15 @@
     cursor: pointer;
 }
 
-.btn-list:hover {
+.enable:hover {
     background-color: green;
+}
+
+.disable {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.disable:hover {
+    cursor: not-allowed;
 }

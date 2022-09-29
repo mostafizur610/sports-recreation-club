@@ -1,0 +1,81 @@
+.profile {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2px;
+
+}
+
+.profile img {
+    height: 80px;
+    width: 80px;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+
+.profile-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.button-section {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.btn-break {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.btn-break:hover {
+    background-color: blueviolet;
+}
+
+.total-exercise {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.total-exercise h5 {
+    padding: 12px;
+}
+
+.break-section {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.break-section h5 {
+    padding: 12px;
+}
+
+.btn-activity {
+    width: 100%;
+    background-color: rgb(130, 36, 218);
+    color: white;
+    font-weight: 900;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.btn-activity:hover {
+    background-color: green;
+}

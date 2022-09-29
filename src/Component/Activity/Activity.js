@@ -2,8 +2,12 @@ import React from 'react';
 import './Activity.css'
 
 const Activity = (props) => {
+    const { activity, handleAddToProfile } = props;
+    // const { handleAddToProfile } = props;
     // console.log(props.activity);
-    const { image, activity_name, description, age, time } = props.activity;
+    const { image, activity_name, description, age, time } = activity;
+    // console.log(props);
+
     return (
         <div className='activity'>
             <img src={image} alt="" />
@@ -14,7 +18,7 @@ const Activity = (props) => {
                 <h4>Time Required: {time}</h4>
             </div>
 
-            <button className='btn-list'>
+            <button onClick={() => handleAddToProfile(activity)} className='btn-list'>
                 <p>Add to List</p>
             </button>
         </div>

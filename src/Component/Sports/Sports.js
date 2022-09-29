@@ -20,6 +20,7 @@ const Sports = () => {
                         activity={activity}
                     ></Activity>)
                 }
+
             </div>
 
 

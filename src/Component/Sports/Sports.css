@@ -8,12 +8,14 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 45px;
     margin: 50px;
+
 }
 
 .profile-container {
     /* border: 1px solid aquamarine; */
     background-color: rgb(234, 245, 240);
     border-radius: 10px;
+
 }
 
 .profile {
@@ -77,7 +79,6 @@
 .break-section h5 {
     padding: 12px;
 }
-
 
 .btn-activity {
     width: 100%;
